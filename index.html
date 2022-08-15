@@ -15,12 +15,65 @@
             <main id="section-1-main">
                 <article class="main-article">
                     <div class="home-phones">
-                        <img src="/img/screenshot1.png" alt="">
+                        <div id="phone-image">
+                            <img src="/img/screenshot1.png" class="screenshot" alt="">
+                            <img src="/img/screenshot2.png" class="screenshot" style="visibility: hidden" alt="">
+                            <img src="/img/screenshot3.png" class="screenshot" style="visibility: hidden" alt="">
+                            <img src="/img/screenshot4.png" class="screenshot" style="visibility: hidden" alt="">
+                        </div>
                     </div>
                     <div class="home-login">
                         <div class="sign-in card">
                             <div aria-disabled="false" role="button" tabindex="0" style="cursor: pointer;">
                                 <img src="/img/logged_out_wordmark.png" alt="Instagram">
+                            </div>
+                            <div class="sign-in-forms">
+                                <form class="form" id="loginForm" method="post">
+                                    <div class="input-form-wrapper">
+                                        <div style="margin: 0 40px 6px;">
+                                            <div class="label-wrapper">
+                                                <label class="input-form-label">
+                                                    <span class="input-form-label-text">Telefone, nome de usuário ou
+                                                        email</span>
+                                                    <input aria-label="Telefone, nome de usuário ou email"
+                                                        aria-required="true" autocapitalize="off" autocorrect="off"
+                                                        maxlength="75" name="username" type="text" class="input-form"
+                                                        value="">
+                                                </label>
+                                            </div>
+                                        </div>
+
+                                        <div style="margin: 0 40px 6px;">
+                                            <div class="label-wrapper">
+                                                <label class="input-form-label">
+                                                    <span class="input-form-label-text">Senha</span>
+                                                    <input aria-label="Senha"
+                                                        aria-required="true" autocapitalize="off" autocorrect="off"
+                                                        maxlength="75" name="password" type="password" class="input-form"
+                                                        value="">
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="signin-button-wrapper">
+                                            <button class="signin-button" disabled="" type="submit">
+                                                <div class="">Entrar</div>
+                                            </button>
+                                        </div>
+                                        <div class="divider-line-wrapper">
+                                            <div class="divider-line"></div>
+                                            <div class="divider-line-text">OU</div>
+                                            <div class="divider-line"></div>
+                                        </div>
+                                        <!-- <p>OU</p> -->
+                                        <div class=""></div>
+                                        <a class="password-reset" href="" tabindex="0">Esqueceu a senha?</a>
+
+                                    </div>
+
+                                </form>
+
                             </div>
 
                         </div>
@@ -31,22 +84,35 @@
                             </p>
                         </div>
                         <div class="get-app">
-                            <p style="text-align: center;">Obtenha o aplicativo.</p>
+                            <div id="get-app-text">
+                                <p style="text-align: center;">Obtenha o aplicativo.</p>
+                            </div>
                             <div class="get-app-links">
-                                <a aria-label="Baixar na App Store" href="" tabindex="0">
-                                    <img alt="Baixar na App Store" class="app-download "
-                                        src="/img/badge_ios_portuguese-brazilian-pt_br.png">
+                                <a aria-label="Baixar na App Store" href="" tabindex="0" class="app-link">
+                                    <img alt="Baixar na App Store" src="/img/badge_ios_portuguese-brazilian-pt_br.png"
+                                        class="app-link-img">
                                 </a>
-                                <a aria-label="Baixar no Google Play" href="" tabindex="0">
-                                    <img alt="Baixar no Google Play" class="app-download"
-                                        src="/img/badge_android_portuguese_brazilian-pt_BR.png">
+                                <a aria-label="Baixar no Google Play" href="" tabindex="0" class="app-link">
+                                    <img alt="Baixar no Google Play"
+                                        src="/img/badge_android_portuguese_brazilian-pt_BR.png" class="app-link-img">
                                 </a>
                             </div>
                         </div>
                     </div>
                 </article class>
             </main>
-            <footer id="section-1-footer"></footer>
+            <footer class="footer" role="contentinfo">
+                <div class="footer-wrapper">
+                    <div class="footer-links">
+
+                    </div>
+                    <div class="footer-author">
+                        <p>
+                            ©2022 Javã Conceição
+                        </p>
+                    </div>
+                </div>
+            </footer>
         </section>
     </div>
 </body>
