@@ -100,23 +100,36 @@ a, a:visited {
 .home-login {
     color: rgba(var(--i1d,38,38,38),1);
     flex-grow: 1;
-    justify-content: center;
+    /* justify-content: center; */
     margin-top: 12px;
     max-width: 350px;
 }
 
 .card {
-    /* -webkit-box-align: center; */
-    /* -webkit-align-items: center; */
-    /* -ms-flex-align: center; */
+
     align-items: center;
-    background-color: #fff;
     background-color: rgba(var(--d87, 255, 255, 255), 1);
-    border: 1px solid #dbdbdb;
     border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
     border-radius: 1px;
     margin: 0 0 10px;
     padding: 10px 0;
+}
+
+.image-name-wrapper {
+    display: flex;
+    margin-top: 36px;
+    margin-bottom: 12px;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.image-name {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
 }
 
 /* .sign-in {} */
@@ -287,6 +300,41 @@ button {
     text-transform: uppercase;
 }
 
+.facebook-signin-button {
+    border: 0;
+    color: rgba(var(--d69,0,149,246),1);
+    display: inline-block;
+    padding: 0;
+    position: relative;
+
+    appearance: none;
+    background: 0 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    text-overflow: ellipsis;
+    text-transform: inherit;
+    user-select: none;
+    width: auto;
+}
+
+.facebook-icon {
+    display: inline-block;
+    margin-right: 8px;
+    position: relative;
+    top: 3px;
+
+    background-repeat: no-repeat;
+    background-position: -414px -259px;
+    height: 16px;
+    width: 16px;
+
+    background-image: url(/img/sprite_core_32f0a4f27407.png);
+}
+
 .password-reset {
     color: rgba(var(--fe0,0,55,107),1);
     font-size: 12px;
@@ -296,7 +344,19 @@ button {
 }
 
 .sign-up {
+    display: block;
     font-weight: 400;
+    /* color: rgba(var(--f52,142,142,142),1); */
+    font-size: 14px;
+    line-height: 18px;
+    margin: -3px 0 -4px;
+}
+
+.sign-up-text {
+    color: rgba(var(--i1d,38,38,38),1);
+    font-size: 14px;
+    margin: 15px;
+    text-align: center;
 }
 
 /* .get-app {} */

@@ -14,7 +14,7 @@
         <section class="section-1" id="section-1">
             <main id="section-1-main">
                 <article class="main-article">
-                    <div class="home-phones">
+                    <div class="home-phones" >
                         <div id="phone-image">
                             <img src="/img/screenshot1.png" class="screenshot" alt="">
                             <img src="/img/screenshot2.png" class="screenshot" style="visibility: hidden" alt="">
@@ -24,8 +24,10 @@
                     </div>
                     <div class="home-login">
                         <div class="sign-in card">
-                            <div aria-disabled="false" role="button" tabindex="0" style="cursor: pointer;">
-                                <img src="/img/logged_out_wordmark.png" alt="Instagram">
+                            <div class="image-name-wrapper">
+                                <div aria-disabled="false" role="button" tabindex="0" style="cursor: pointer;">
+                                    <img class="image-name" src="/img/logged_out_wordmark.png" alt="Instagram">
+                                </div>
                             </div>
                             <div class="sign-in-forms">
                                 <form class="form" id="loginForm" method="post">
@@ -47,14 +49,12 @@
                                             <div class="label-wrapper">
                                                 <label class="input-form-label">
                                                     <span class="input-form-label-text">Senha</span>
-                                                    <input aria-label="Senha"
-                                                        aria-required="true" autocapitalize="off" autocorrect="off"
-                                                        maxlength="75" name="password" type="password" class="input-form"
-                                                        value="">
+                                                    <input aria-label="Senha" aria-required="true" autocapitalize="off"
+                                                        autocorrect="off" maxlength="75" name="password" type="password"
+                                                        class="input-form" value="">
                                                 </label>
                                             </div>
                                         </div>
-
 
                                         <div class="signin-button-wrapper">
                                             <button class="signin-button" disabled="" type="submit">
@@ -66,8 +66,13 @@
                                             <div class="divider-line-text">OU</div>
                                             <div class="divider-line"></div>
                                         </div>
-                                        <!-- <p>OU</p> -->
-                                        <div class=""></div>
+
+                                        <div class="signin-button-wrapper">
+                                            <button class="facebook-signin-button" disabled="" type="submit">
+                                                <span class="facebook-icon"></span>
+                                                <span style="color: #385185">Entrar com o Facebook</span>
+                                            </button>
+                                        </div>
                                         <a class="password-reset" href="" tabindex="0">Esqueceu a senha?</a>
 
                                     </div>
@@ -77,11 +82,13 @@
                             </div>
 
                         </div>
-                        <div class="sign-up card">
-                            <p>
-                                Não tem uma conta?
-                                <span class="link-blue">Cadastre-se</span>
-                            </p>
+                        <div class="card">
+                            <div class="sign-up">
+                                <p class="sign-up-text">
+                                    Não tem uma conta?
+                                    <span class="link-blue">Cadastre-se</span>
+                                </p>
+                            </div>
                         </div>
                         <div class="get-app">
                             <div id="get-app-text">
