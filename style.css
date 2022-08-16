@@ -72,7 +72,7 @@ a, a:visited {
 
 .home-phones {
     align-items: center;
-    background-image: url(/img/home-phones.png);
+    background-image: url(img/home-phones.png);
     background-position: -46px 0;
     background-size: 468.32px 634.15px;
     flex-basis: 380.32px;
@@ -384,7 +384,7 @@ button {
     height: 16px;
     width: 16px;
 
-    background-image: url(/img/sprite_core_32f0a4f27407.png);
+    background-image: url(img/sprite_core_32f0a4f27407.png);
 }
 
 .password-reset {
